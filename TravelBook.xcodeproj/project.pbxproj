@@ -14,6 +14,9 @@
 		EB68A164260B2C8900E26275 /* TravelBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB68A162260B2C8900E26275 /* TravelBook.xcdatamodeld */; };
 		EB68A166260B2C8A00E26275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB68A165260B2C8A00E26275 /* Assets.xcassets */; };
 		EB68A169260B2C8A00E26275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB68A167260B2C8A00E26275 /* LaunchScreen.storyboard */; };
+		EB91070A260C257F00316781 /* CoredataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB910709260C257F00316781 /* CoredataHelper.swift */; };
+		EB91070E260C285400316781 /* PlacesCoreDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91070D260C285400316781 /* PlacesCoreDataModel.swift */; };
+		EB910715260C362000316781 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB910714260C362000316781 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		EB68A165260B2C8A00E26275 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB68A168260B2C8A00E26275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB68A16A260B2C8A00E26275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB910709260C257F00316781 /* CoredataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataHelper.swift; sourceTree = "<group>"; };
+		EB91070D260C285400316781 /* PlacesCoreDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCoreDataModel.swift; sourceTree = "<group>"; };
+		EB910714260C362000316781 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,11 @@
 		EB68A158260B2C8900E26275 /* TravelBook */ = {
 			isa = PBXGroup;
 			children = (
+				EB910712260C355600316781 /* Controllers */,
+				EB91070C260C27EC00316781 /* Models */,
+				EB910708260C255200316781 /* CoredataHelper */,
 				EB68A159260B2C8900E26275 /* AppDelegate.swift */,
 				EB68A15B260B2C8900E26275 /* SceneDelegate.swift */,
-				EB68A15D260B2C8900E26275 /* ViewController.swift */,
 				EB68A15F260B2C8900E26275 /* Main.storyboard */,
 				EB68A165260B2C8A00E26275 /* Assets.xcassets */,
 				EB68A167260B2C8A00E26275 /* LaunchScreen.storyboard */,
@@ -68,6 +76,31 @@
 				EB68A162260B2C8900E26275 /* TravelBook.xcdatamodeld */,
 			);
 			path = TravelBook;
+			sourceTree = "<group>";
+		};
+		EB910708260C255200316781 /* CoredataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				EB910709260C257F00316781 /* CoredataHelper.swift */,
+			);
+			path = CoredataHelper;
+			sourceTree = "<group>";
+		};
+		EB91070C260C27EC00316781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB91070D260C285400316781 /* PlacesCoreDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB910712260C355600316781 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB68A15D260B2C8900E26275 /* ViewController.swift */,
+				EB910714260C362000316781 /* ListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB91070E260C285400316781 /* PlacesCoreDataModel.swift in Sources */,
 				EB68A164260B2C8900E26275 /* TravelBook.xcdatamodeld in Sources */,
+				EB91070A260C257F00316781 /* CoredataHelper.swift in Sources */,
 				EB68A15E260B2C8900E26275 /* ViewController.swift in Sources */,
 				EB68A15A260B2C8900E26275 /* AppDelegate.swift in Sources */,
 				EB68A15C260B2C8900E26275 /* SceneDelegate.swift in Sources */,
+				EB910715260C362000316781 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

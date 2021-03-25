@@ -32,7 +32,7 @@ class CoredataHelper{
         var arrPlaces = [Places]()
         let request = NSFetchRequest<NSManagedObject>(entityName: "Places")
         do{
-           arrPlaces = try context.fetch(request) as! [Places]
+            arrPlaces = try context.fetch(request) as! [Places]
             print("Fetching Data success")
         }catch{
             print("Error fetching Data")

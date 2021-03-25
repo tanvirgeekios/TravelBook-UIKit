@@ -10,6 +10,7 @@ import UIKit
 class ListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var listTableView: UITableView!
+    var arrPlaces = [Places]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         listTableView.delegate = self
         listTableView.dataSource = self
+        arrPlaces = CoredataHelper.shared.fetchAllPlaces()
         
     }
     @objc func addButtonClicked(){
@@ -26,12 +28,12 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //MARK:- TableView DataSource Methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrPlaces.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = listTableView.dequeueReusableCell(withIdentifier: "ListCell", for: indexPath)
-        cell.textLabel?.text = "Test"
+        cell.textLabel?.text = arrPlaces[indexPath.row].title
         return cell
     }
 
